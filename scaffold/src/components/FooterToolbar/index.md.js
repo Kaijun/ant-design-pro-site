@@ -1,0 +1,1 @@
+webpackJsonp([11,34],{1724:function(e,o){e.exports={content:["section"],meta:{category:"Components",type:"General",title:"FooterToolbar",subtitle:"\u5e95\u90e8\u56fa\u5b9a\u5de5\u5177\u680f",cols:1,filename:"scaffold/src/components/FooterToolbar/index.md"},toc:["ul",["li",["a",{className:"bisheng-toc-h2",href:"#API",title:"API"},"API"]]],api:["section",["h2","API"]]}}});
