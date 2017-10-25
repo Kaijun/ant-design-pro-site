@@ -3256,13 +3256,19 @@ a:focus {
 }
 #header {
   background-color: #fff;
-  padding: 0 40px;
+  -webkit-box-shadow: 0 2px 8px #f0f1f2;
+          box-shadow: 0 2px 8px #f0f1f2;
+  position: relative;
+  z-index: 10;
   height: 64px;
 }
 #logo {
+  overflow: hidden;
+  padding-left: 40px;
   float: left;
   line-height: 64px;
   text-decoration: none;
+  height: 64px;
 }
 #logo img {
   display: inline;
@@ -3278,6 +3284,7 @@ a:focus {
 }
 .header-meta {
   zoom: 1;
+  padding-right: 40px;
 }
 .header-meta:before,
 .header-meta:after {
@@ -3308,7 +3315,6 @@ a:focus {
   line-height: 22px;
   padding-left: 16px;
   margin-top: 19px;
-  margin-left: 20px;
 }
 #search-box .anticon {
   color: #CED4D9;
@@ -3332,6 +3338,7 @@ a:focus {
 }
 #menu {
   float: right;
+  overflow: hidden;
   height: 64px;
 }
 #menu .ant-menu {
@@ -5153,22 +5160,17 @@ ul.anticons-list li.copied:after {
   height: 22px;
   cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
-  #logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-    width: 166px;
-  }
-  #footer .bottom-bar {
-    display: none;
-  }
-}
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1300px) {
   #search-box {
     display: none;
   }
+}
+@media only screen and (max-width: 1200px) {
+  #logo {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 992px) {
   .code-boxes-col-2-1,
   .code-boxes-col-1-1 {
     float: none;
@@ -5319,8 +5321,16 @@ ul.anticons-list li.copied:after {
     width: calc(100% - 32px);
   }
 }
-@media only screen and (max-width: 1200px) {
-  #header {
-    padding: 0 40px;
+@media only screen and (max-width: 768px) {
+  #logo {
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 200px;
+  }
+  #footer .bottom-bar {
+    display: none;
   }
 }
