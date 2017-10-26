@@ -1,49 +1,4 @@
 
-@keyframes antZoomRightIn {
-  0% {
-    opacity: 0;
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  100% {
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes antZoomRightOut {
-  0% {
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-@keyframes antZoomRightOut {
-  0% {
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
 @-webkit-keyframes antZoomDownIn {
   0% {
     opacity: 0;
@@ -14691,4 +14646,32 @@ span.ant-radio + * {
 .ant-table-small .ant-table-thead > tr > th .ant-table-filter-icon:after {
   height: 39px;
   top: -14px;
+}
+.ant-table-column-sorter {
+  position: relative;
+  margin-left: 8px;
+  display: inline-block;
+  width: 14px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: normal;
+  color: #697B8C;
+}
+.ant-table-column-sorter-up,
+.ant-table-column-sorter-down {
+  line-height: 4px;
+  display: block;
+  width: 14px;
+  height: 6px;
+  cursor: pointer;
+}
+.ant-table-column-sorter-up:hover .anticon,
+.ant-table-column-sorter-down:hover .anticon {
+  color: #314659;
+}
+.ant-table-column-sorter-up.on .anticon-caret-up,
+.ant-table-column-sorter-down.on .anticon-caret-up,
+.ant-table-column-sorter-up.on .anticon-caret-down,
+.ant-table-column-sorter-down.on .anticon-caret-down {
+  color: #1890FF;
 }
