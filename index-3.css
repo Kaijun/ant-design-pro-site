@@ -5136,6 +5136,14 @@ ul.anticons-list li.copied:after {
   height: 22px;
   cursor: pointer;
 }
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+  .main-wrapper > .ant-row > .ant-col-xl-5 {
+    width: 274px;
+  }
+  #header .ant-row .ant-col-xl-5 {
+    width: 274px;
+  }
+}
 @media only screen and (max-width: 1300px) {
   #search-box {
     display: none;
@@ -5153,7 +5161,7 @@ ul.anticons-list li.copied:after {
     width: 100%;
   }
   .preview-image-boxes {
-    margin: 0!important;
+    margin: 0 !important;
     float: none;
     width: 100%;
   }
@@ -5276,7 +5284,7 @@ ul.anticons-list li.copied:after {
     margin-right: 0;
   }
   .main-container > .markdown > * {
-    width: 100%!important;
+    width: 100% !important;
   }
   .main-wrapper {
     width: 100%;
