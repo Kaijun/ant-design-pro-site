@@ -251,33 +251,37 @@
 .radar___2fZzh .legend___2UQp3 .legendItem___3VfaH {
   position: relative;
   text-align: center;
-}
-.radar___2fZzh .legend___2UQp3 .legendItem___3VfaH p {
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 22px;
 }
 .radar___2fZzh .legend___2UQp3 .legendItem___3VfaH h6 {
   color: rgba(0, 0, 0, 0.85);
   padding-left: 16px;
   font-size: 24px;
   line-height: 32px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
-.radar___2fZzh .legend___2UQp3 .legendItem___3VfaH .split___2zxI8 {
+.radar___2fZzh .legend___2UQp3 .legendItem___3VfaH:after {
   background-color: #e8e8e8;
   position: absolute;
   top: 8px;
   right: 0;
   height: 40px;
   width: 1px;
+  content: '';
+}
+.radar___2fZzh .legend___2UQp3 > :last-child .legendItem___3VfaH:after {
+  display: none;
 }
 .radar___2fZzh .legend___2UQp3 .dot___2HXsS {
-  border-radius: 8px;
+  border-radius: 6px;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 6px;
   position: relative;
   top: -1px;
-  height: 8px;
-  width: 8px;
+  height: 6px;
+  width: 6px;
 }
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable declaration-bang-space-before */
