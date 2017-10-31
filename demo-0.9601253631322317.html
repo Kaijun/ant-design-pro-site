@@ -37,9 +37,9 @@
 
   var ReactDOM = require("react-dom");
 
-  var _antDesignPro = require("ant-design-pro");
+  var _GlobalFooter = require("ant-design-pro/lib/GlobalFooter");
 
-  var _antDesignPro2 = _interopRequireDefault(_antDesignPro);
+  var _GlobalFooter2 = _interopRequireDefault(_GlobalFooter);
 
   var _antd = require("antd");
 
@@ -65,10 +65,19 @@
     }),
     " 2017 蚂蚁金服体验技术部出品"
   );
-  return React.createElement(_antDesignPro2.default, {
-    links: links,
-    copyright: copyright
-  });
+  return React.createElement(
+    "div",
+    {
+      style: {
+        background: '#f5f5f5',
+        overflow: 'hidden'
+      }
+    },
+    React.createElement(_GlobalFooter2.default, {
+      links: links,
+      copyright: copyright
+    })
+  );
 }
     </script>
     <script>
